@@ -234,7 +234,8 @@ section {
     gap: 18px;
 }
 
-#skills .card-grid, #contact .card-grid {
+#skills .card-grid,
+#contact .card-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
 }
 
@@ -428,6 +429,11 @@ footer {
     .card-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    #skills .card-grid,
+    #contact .card-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
 }
 
 @media (max-width: 640px) {
@@ -442,9 +448,15 @@ footer {
     .card-grid {
         grid-template-columns: 1fr;
     }
+
+    #skills .card-grid,
+    #contact .card-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     .js-reveal,
     .js-reveal.is-visible,
     .back-to-top,
