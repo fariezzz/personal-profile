@@ -238,6 +238,15 @@ section {
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
 }
 
+#skills .card {
+    display: flex;
+    flex-direction: column;
+}
+
+#skills .card p {
+    margin-bottom: 12px;
+}
+
 .card {
     background: var(--glass);
     border: 1px solid var(--border);
@@ -315,7 +324,9 @@ section {
 
 .skill-level {
     display: inline-block;
-    margin-top: 12px;
+    align-self: flex-start;
+    width: fit-content;
+    margin-top: auto;
     padding: 6px 12px;
     border-radius: 999px;
     font-size: 0.75rem;
