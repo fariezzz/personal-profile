@@ -101,9 +101,9 @@ a {
 .hero {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 36px;
+    gap: 45px;
     align-items: center;
-    padding: 12px 0 8px;
+    padding: 0px 0 8px;
 }
 
 .hero h1 {
@@ -184,6 +184,7 @@ a {
 .pill {
     border: 1px solid rgba(92, 248, 255, 0.35);
     padding: 8px 14px;
+    margin-bottom: 8px;
     border-radius: 999px;
     display: inline-flex;
     align-items: center;
@@ -239,6 +240,17 @@ section {
     color: var(--muted);
     line-height: 1.6;
     text-decoration: none;
+}
+
+.project-links {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-links .btn {
+    text-transform: none !important;
 }
 
 .skill-grid {
